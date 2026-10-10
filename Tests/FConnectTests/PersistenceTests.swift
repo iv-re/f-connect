@@ -87,7 +87,7 @@ struct PersistenceTests {
     
     @Test func controllerKeepsSavedPortsAndFillsMissingOnes() {
         let (c, d, name) = controller(with: #"[{"id": 1, "targetDuty": 88, "isRPMSync": true}, {"id": 3, "customName": "Rear"}]"#)
-        defer { d.removePersistentDomain(forName: name) }
+        defer { d.discard(suite: name) }
         #expect(c.groupStates.map(\.id) == [0, 1, 2, 3])
         #expect(c.groupStates[1].targetDuty == 88 && c.groupStates[1].isRPMSync)
         #expect(c.groupStates[3].customName == "Rear")
@@ -97,14 +97,14 @@ struct PersistenceTests {
     @Test func controllerStartsFromDefaultsWhenTheBlobIsCorrupt() {
         for blob in ["not json at all", "{}", "[1, 2, 3]", ""] {
             let (c, d, name) = controller(with: blob)
-            defer { d.removePersistentDomain(forName: name) }
+            defer { d.discard(suite: name) }
             #expect(c.groupStates.map(\.id) == [0, 1, 2, 3], "blob: \(blob)")
         }
     }
     
     @Test func controllerStartsFromDefaultsWithoutAnySavedData() {
         let (c, d, name) = controller(with: nil)
-        defer { d.removePersistentDomain(forName: name) }
+        defer { d.discard(suite: name) }
         #expect(c.groupStates.count == 4)
         #expect(c.groupStates.allSatisfy { $0.fanCount == 3 })
     }

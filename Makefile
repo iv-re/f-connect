@@ -25,6 +25,8 @@ build:
 
 test:
 	$(XCODEBUILD) -destination 'platform=macOS' test
+	@# the tests' throwaway UserDefaults suites can leave empty plists behind
+	@rm -f ~/Library/Preferences/FConnectTests-*.plist
 
 install: build
 	-pkill -x $(APP_NAME)

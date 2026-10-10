@@ -30,7 +30,7 @@ struct ControllerTests {
     }
     
     private func cleanUp(_ rig: Rig) {
-        rig.defaults.removePersistentDomain(forName: rig.suiteName)
+        rig.defaults.discard(suite: rig.suiteName)
     }
     
     // MARK: - Initialization
@@ -361,7 +361,7 @@ struct ControllerTests {
     @Test func settingsOfDifferentModelsDoNotCollide() async {
         let suiteName = "FConnectTests-\(UUID().uuidString)"
         let defaults = UserDefaults(suiteName: suiteName)!
-        defer { defaults.removePersistentDomain(forName: suiteName) }
+        defer { defaults.discard(suite: suiteName) }
         
         let a = Ene6K77Controller(device: MockHIDDevice(), profile: .slV2, defaults: defaults)
         a.setGroupName(groupIndex: 0, name: "Front")
@@ -532,7 +532,7 @@ struct ControllerTests {
         let json = #"[{"id": 0, "lightingMode": 1, "staticColor": {"red": 10, "green": 20, "blue": 30}}]"#
         let suite = "FConnectTests-\(UUID().uuidString)"
         let defaults = UserDefaults(suiteName: suite)!
-        defer { defaults.removePersistentDomain(forName: suite) }
+        defer { defaults.discard(suite: suite) }
         defaults.set(Data(json.utf8), forKey: Ene6K77Profile.slV2.prefsPrefix + "groups")
         
         let c = Ene6K77Controller(device: MockHIDDevice(), profile: .slV2, defaults: defaults)

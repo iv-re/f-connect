@@ -119,3 +119,13 @@ enum Replies {
 func drainMainQueue() async {
     try? await Task.sleep(nanoseconds: 50_000_000)
 }
+
+extension UserDefaults {
+    /// Drops a throwaway test suite and its plist file (`removePersistentDomain` alone leaves an empty file behind
+    /// in ~/Library/Preferences on every run).
+    func discard(suite name: String) {
+        removePersistentDomain(forName: name)
+        let file = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Preferences/\(name).plist")
+        try? FileManager.default.removeItem(at: file)
+    }
+}
