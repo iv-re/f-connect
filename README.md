@@ -43,7 +43,7 @@ Download the latest `.dmg` from Releases, open it and drag F-Connect to Applicat
 The app is signed ad-hoc and is not notarized, so macOS shows a warning on first launch. Clear the quarantine flag:
 
 ```bash
-xattr -dr com.apple.quarantine /Applications/F-Connect.app
+/usr/bin/xattr -dr com.apple.quarantine /Applications/F-Connect.app
 ```
 
 Then open the app normally.
