@@ -1,0 +1,59 @@
+name: FConnect
+options:
+  bundleIdPrefix: software.pusk
+settings:
+  MACOSX_DEPLOYMENT_TARGET: "13.0"
+  SWIFT_VERSION: "5.9"
+targets:
+  FConnect:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: FConnect
+    info:
+      path: FConnect/Info.plist
+      properties:
+        CFBundleDisplayName: "F-Connect"
+        CFBundleIdentifier: software.pusk.fconnect
+        CFBundleName: "F-Connect"
+        CFBundlePackageType: "APPL"
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
+        LSMinimumSystemVersion: "13.0"
+        NSHighResolutionCapable: true
+        LSApplicationCategoryType: "public.app-category.utilities"
+        NSHumanReadableCopyright: "Copyright © 2026 Ivan Salvatore. MIT License."
+    settings:
+      GENERATE_INFOPLIST_FILE: NO
+      INFOPLIST_FILE: FConnect/Info.plist
+      PRODUCT_NAME: "F-Connect"
+      PRODUCT_BUNDLE_IDENTIFIER: software.pusk.fconnect
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+      ENABLE_HARDENED_RUNTIME: YES
+      CODE_SIGN_ENTITLEMENTS: FConnect/FConnect.entitlements
+  FConnectTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    # Swift Testing itself needs macOS 14; only the test bundle is affected, the app still targets 13.
+    # Unhosted: the app logic is compiled straight into the test bundle, so running the tests never launches the app
+    # (which would open the real HID device and write to it).
+    sources:
+      - path: Tests/FConnectTests
+      - path: FConnect/Core
+      - path: FConnect/Controllers
+      - path: FConnect/Models
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      PRODUCT_BUNDLE_IDENTIFIER: software.pusk.fconnect.tests
+schemes:
+  FConnect:
+    build:
+      targets:
+        FConnect: all
+        FConnectTests: [test]
+    test:
+      targets:
+        - FConnectTests

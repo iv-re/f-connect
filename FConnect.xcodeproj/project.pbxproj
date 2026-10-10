@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0406D2A465328BA467943D0B /* HIDDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F8E3D898F9B11DC365E74 /* HIDDevice.swift */; };
+		06E7773B45D8195E5BE20AB7 /* FConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FA6510F93B3BC962B9D622 /* FConnectApp.swift */; };
+		09D82CCEEB205DAF7FF33E31 /* LightingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73ED22C5F05EEA13D3B6626 /* LightingModels.swift */; };
+		0A630936888A76162E18C3A0 /* FanCurveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B8EA0A07981B20F6569D8 /* FanCurveEngine.swift */; };
+		0F97556810EE7C2B9BACB335 /* MockHIDDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2598CCA13D24C384A6D213 /* MockHIDDevice.swift */; };
+		0FEAA8AB4E73221784A562DD /* StatusMenuFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105DFF78C771D135CA2278A /* StatusMenuFormatter.swift */; };
+		125E6679D1549C77C025C80A /* SystemThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F891104019D1818CD50E5 /* SystemThermalMonitor.swift */; };
+		136E913A4C59B81432712B96 /* StatusMenuFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105DFF78C771D135CA2278A /* StatusMenuFormatter.swift */; };
+		18067BFFDD0DDA45CB287F69 /* UIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7916F13B071EA14A3E5B30 /* UIModels.swift */; };
+		1DC3344F38E691E7E8566515 /* FactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11B3B9224466EA58892E446 /* FactoryTests.swift */; };
+		1FD27028D62CC4DB25BC2DDD /* HIDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C4A5E700DB07EDA27A96D /* HIDError.swift */; };
+		2064007CFB5ADC949A941B77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419AEAAC935D8E0B51BE8B2 /* ContentView.swift */; };
+		2296D3582A56D63A8630977A /* SMCSensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B71157700211BCEA5067F7 /* SMCSensorTests.swift */; };
+		23C513F42DAF322F66C43DE6 /* MainDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85843E012901A67DA7564DD /* MainDashboardView.swift */; };
+		23E27663460117806D2B85B8 /* DeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1F3B64532AF5E5B7480FDD /* DeviceSettingsView.swift */; };
+		257ECB759EE4E1BEF3727B1D /* DeviceCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F3FA98A83BC85C4B93117D /* DeviceCapabilities.swift */; };
+		2F69D02712EF831310AE235D /* DiagnosticsCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3EDE4E2E8B7F73F6BC468 /* DiagnosticsCollector.swift */; };
+		3E12EE7809788D5CD09F480F /* CoolingControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AE88D6F2D73CD0CEB30C2 /* CoolingControlView.swift */; };
+		3FA6D955BA0EAE48F59EA2E2 /* DiagnosticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969FA342C4D71AF345FFED78 /* DiagnosticsTests.swift */; };
+		4204D7DFE8E9937069042D91 /* ENELevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10492295EDCE5402DA6C59D4 /* ENELevels.swift */; };
+		4425110BEFE04C2DF079DF19 /* FanCurveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B8EA0A07981B20F6569D8 /* FanCurveEngine.swift */; };
+		45A376B271B7ACE67B8ED27D /* LightingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73ED22C5F05EEA13D3B6626 /* LightingModels.swift */; };
+		4B34A4AAA1855729BF2CB267 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC2C8826EDC4893E1F1C96C /* OverviewView.swift */; };
+		4E1D3E2386A18D5BCA0E24C3 /* LightingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140AD23F148A275781B20D9E /* LightingTests.swift */; };
+		5E368F7BB143F8CF4CF0F47E /* EventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986ED5B93694AA60668CAEC2 /* EventLog.swift */; };
+		5F167E3FDAFD175649286018 /* BaseDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F98797120F93CC49D9EE5 /* BaseDeviceController.swift */; };
+		5F8EDFB5742C17E043C635E3 /* HIDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C4A5E700DB07EDA27A96D /* HIDError.swift */; };
+		723B34E7C33F01A033C8C3BE /* HIDDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F8E3D898F9B11DC365E74 /* HIDDevice.swift */; };
+		7CDB0E0220461E8569B2D0B9 /* DiagnosticsReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998AD6950554FA36FEC1A36 /* DiagnosticsReport.swift */; };
+		8283959737FA08A7FDBCADAF /* PhysicalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC8CECF54CE1FD36D13945 /* PhysicalDevice.swift */; };
+		8752B1C8E2D07FA7BAF6DD6D /* LightingControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852517D9CBDD3527B87F4CF3 /* LightingControlView.swift */; };
+		88E8158CDED78C90E358EBD5 /* Ene6K77Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A559735EBB41C71D304D615 /* Ene6K77Profile.swift */; };
+		88F99DA199576F53F81ED38A /* Ene6K77Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A559735EBB41C71D304D615 /* Ene6K77Profile.swift */; };
+		89F6CEF49720C78570C5947B /* ProfilePacketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C986B30158032A354806FF /* ProfilePacketTests.swift */; };
+		8A66B46AB2827DF5534B15F3 /* DeviceCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F3FA98A83BC85C4B93117D /* DeviceCapabilities.swift */; };
+		8AD356539628BBFF5805F88A /* EventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986ED5B93694AA60668CAEC2 /* EventLog.swift */; };
+		8B32219334C6646C14105DA0 /* DeviceControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E98AA74842C76807CF20 /* DeviceControllerFactory.swift */; };
+		8BA44FFE85601F234AA35E9F /* CoreSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE828169AB81BFECEC2E15 /* CoreSupportTests.swift */; };
+		8BDAF766469881898BA46D8C /* ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A9092D0FEC639C2557CDDB /* ControllerTests.swift */; };
+		8C282D075EF1BB9D6314DAEC /* FanGroupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19A3B57FFB90377B24F469 /* FanGroupState.swift */; };
+		8CEEAD43C06E57D4C4EFD0D0 /* FanGroupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19A3B57FFB90377B24F469 /* FanGroupState.swift */; };
+		8D4E9D31CFE3A75AE233F81E /* SystemThermalMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F891104019D1818CD50E5 /* SystemThermalMonitor.swift */; };
+		8F5C0F89A1C35CAA94E18ACF /* CurveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B674FA98C1BD5A8116B7E /* CurveTests.swift */; };
+		8F62691425F4339A1681F31B /* BaseDeviceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06F98797120F93CC49D9EE5 /* BaseDeviceController.swift */; };
+		8F9826153AC9B0CD5D23F49D /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA674E5EA1B685D852EC355 /* DeviceManager.swift */; };
+		900C80FC0303B5EDA08D1510 /* UIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7916F13B071EA14A3E5B30 /* UIModels.swift */; };
+		903CB3C7C21D7747E96EAE4A /* DeviceControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E98AA74842C76807CF20 /* DeviceControllerFactory.swift */; };
+		9BEB1E4B94C3BAF86D8E7B81 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA674E5EA1B685D852EC355 /* DeviceManager.swift */; };
+		A1DFA3A1C1092FA4D2B66903 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B27B36D1A36E9F48C0B8 /* PersistenceTests.swift */; };
+		B04293A4F506625901A0E831 /* Ene6K77Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7EB4F5B6CF7957238F24A /* Ene6K77Controller.swift */; };
+		B43924928FA9A2CE33C69142 /* ENELevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10492295EDCE5402DA6C59D4 /* ENELevels.swift */; };
+		B83BB88FCC7688CBF882FF54 /* ProfileReplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927F0D96F058E7050B38E9A /* ProfileReplyTests.swift */; };
+		BDD1842FF84F74B6BB5ED717 /* SMCSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5615A4BA8AB1CB5A6E260DF /* SMCSensors.swift */; };
+		C836C94ADDAB7E0FE497E3F1 /* KnownDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B80ED25608F7853057E717 /* KnownDevices.swift */; };
+		CACFCEC8455B8A1D80ACA491 /* KnownDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B80ED25608F7853057E717 /* KnownDevices.swift */; };
+		DD56D31813B4B838A8A66BC0 /* PhysicalDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC8CECF54CE1FD36D13945 /* PhysicalDevice.swift */; };
+		E27006F4937BD91014178DBA /* DiagnosticsCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3EDE4E2E8B7F73F6BC468 /* DiagnosticsCollector.swift */; };
+		E5E810A8978D68FC5C33CBFF /* UniFanGraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C936DA08BC26D2084448D1 /* UniFanGraphicView.swift */; };
+		ED2BF6F68638F328AD9C2474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18228D14A4C8BB040DACE65 /* Assets.xcassets */; };
+		EDE1F66F50057FAC4B7CA919 /* DiagnosticsReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F998AD6950554FA36FEC1A36 /* DiagnosticsReport.swift */; };
+		F5275ADFF839450CDAE0BDF0 /* Ene6K77Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7EB4F5B6CF7957238F24A /* Ene6K77Controller.swift */; };
+		F8123B88437CF0489074015F /* SMCSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5615A4BA8AB1CB5A6E260DF /* SMCSensors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043AE88D6F2D73CD0CEB30C2 /* CoolingControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolingControlView.swift; sourceTree = "<group>"; };
+		0BC2C8826EDC4893E1F1C96C /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		10492295EDCE5402DA6C59D4 /* ENELevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENELevels.swift; sourceTree = "<group>"; };
+		140AD23F148A275781B20D9E /* LightingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingTests.swift; sourceTree = "<group>"; };
+		15F3FA98A83BC85C4B93117D /* DeviceCapabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCapabilities.swift; sourceTree = "<group>"; };
+		24E3EDE4E2E8B7F73F6BC468 /* DiagnosticsCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsCollector.swift; sourceTree = "<group>"; };
+		449F8E3D898F9B11DC365E74 /* HIDDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDDevice.swift; sourceTree = "<group>"; };
+		46A9092D0FEC639C2557CDDB /* ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerTests.swift; sourceTree = "<group>"; };
+		4A559735EBB41C71D304D615 /* Ene6K77Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ene6K77Profile.swift; sourceTree = "<group>"; };
+		4B6F891104019D1818CD50E5 /* SystemThermalMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemThermalMonitor.swift; sourceTree = "<group>"; };
+		4EA674E5EA1B685D852EC355 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		51F03C329FAAF9E581FE6BB2 /* FConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C936DA08BC26D2084448D1 /* UniFanGraphicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniFanGraphicView.swift; sourceTree = "<group>"; };
+		55B71157700211BCEA5067F7 /* SMCSensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCSensorTests.swift; sourceTree = "<group>"; };
+		5CFC8CECF54CE1FD36D13945 /* PhysicalDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDevice.swift; sourceTree = "<group>"; };
+		612C4A5E700DB07EDA27A96D /* HIDError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDError.swift; sourceTree = "<group>"; };
+		64F63E6A934FAE189940BBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6927F0D96F058E7050B38E9A /* ProfileReplyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReplyTests.swift; sourceTree = "<group>"; };
+		6C07E98AA74842C76807CF20 /* DeviceControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceControllerFactory.swift; sourceTree = "<group>"; };
+		6E8B8EA0A07981B20F6569D8 /* FanCurveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanCurveEngine.swift; sourceTree = "<group>"; };
+		778B674FA98C1BD5A8116B7E /* CurveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveTests.swift; sourceTree = "<group>"; };
+		77EE828169AB81BFECEC2E15 /* CoreSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreSupportTests.swift; sourceTree = "<group>"; };
+		78F7EB4F5B6CF7957238F24A /* Ene6K77Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ene6K77Controller.swift; sourceTree = "<group>"; };
+		7D1F3B64532AF5E5B7480FDD /* DeviceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsView.swift; sourceTree = "<group>"; };
+		8366266640C1EE70564508A3 /* FConnect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FConnect.entitlements; sourceTree = "<group>"; };
+		852517D9CBDD3527B87F4CF3 /* LightingControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingControlView.swift; sourceTree = "<group>"; };
+		8A9B3DB7B6FD9040052109A6 /* FConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7916F13B071EA14A3E5B30 /* UIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIModels.swift; sourceTree = "<group>"; };
+		9105DFF78C771D135CA2278A /* StatusMenuFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuFormatter.swift; sourceTree = "<group>"; };
+		969FA342C4D71AF345FFED78 /* DiagnosticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsTests.swift; sourceTree = "<group>"; };
+		986ED5B93694AA60668CAEC2 /* EventLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLog.swift; sourceTree = "<group>"; };
+		A084B27B36D1A36E9F48C0B8 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		A9C986B30158032A354806FF /* ProfilePacketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePacketTests.swift; sourceTree = "<group>"; };
+		B06F98797120F93CC49D9EE5 /* BaseDeviceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeviceController.swift; sourceTree = "<group>"; };
+		B7FA6510F93B3BC962B9D622 /* FConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FConnectApp.swift; sourceTree = "<group>"; };
+		C11B3B9224466EA58892E446 /* FactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryTests.swift; sourceTree = "<group>"; };
+		C419AEAAC935D8E0B51BE8B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C85843E012901A67DA7564DD /* MainDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardView.swift; sourceTree = "<group>"; };
+		DE19A3B57FFB90377B24F469 /* FanGroupState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanGroupState.swift; sourceTree = "<group>"; };
+		E0B80ED25608F7853057E717 /* KnownDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownDevices.swift; sourceTree = "<group>"; };
+		E73ED22C5F05EEA13D3B6626 /* LightingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingModels.swift; sourceTree = "<group>"; };
+		F18228D14A4C8BB040DACE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5615A4BA8AB1CB5A6E260DF /* SMCSensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCSensors.swift; sourceTree = "<group>"; };
+		F998AD6950554FA36FEC1A36 /* DiagnosticsReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsReport.swift; sourceTree = "<group>"; };
+		FF2598CCA13D24C384A6D213 /* MockHIDDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHIDDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0232E1CC9692EEB70803B288 /* FConnect */ = {
+			isa = PBXGroup;
+			children = (
+				F18228D14A4C8BB040DACE65 /* Assets.xcassets */,
+				8366266640C1EE70564508A3 /* FConnect.entitlements */,
+				B7FA6510F93B3BC962B9D622 /* FConnectApp.swift */,
+				64F63E6A934FAE189940BBDA /* Info.plist */,
+				4AB1420655BCC89990AF41AD /* Controllers */,
+				D183E850EFA3F3535BEBEAE0 /* Core */,
+				DBD23F254A68161E4678BF52 /* Models */,
+				556B194F10DD2A68C830C500 /* UI */,
+			);
+			path = FConnect;
+			sourceTree = "<group>";
+		};
+		0B117BB504AC5B41BC244F24 /* FConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				46A9092D0FEC639C2557CDDB /* ControllerTests.swift */,
+				77EE828169AB81BFECEC2E15 /* CoreSupportTests.swift */,
+				778B674FA98C1BD5A8116B7E /* CurveTests.swift */,
+				969FA342C4D71AF345FFED78 /* DiagnosticsTests.swift */,
+				C11B3B9224466EA58892E446 /* FactoryTests.swift */,
+				140AD23F148A275781B20D9E /* LightingTests.swift */,
+				A084B27B36D1A36E9F48C0B8 /* PersistenceTests.swift */,
+				A9C986B30158032A354806FF /* ProfilePacketTests.swift */,
+				6927F0D96F058E7050B38E9A /* ProfileReplyTests.swift */,
+				55B71157700211BCEA5067F7 /* SMCSensorTests.swift */,
+				FE29EC50560BCD4F16AE27BC /* Support */,
+			);
+			name = FConnectTests;
+			path = Tests/FConnectTests;
+			sourceTree = "<group>";
+		};
+		19AE89A5317C4CD2786CEA93 = {
+			isa = PBXGroup;
+			children = (
+				0232E1CC9692EEB70803B288 /* FConnect */,
+				0B117BB504AC5B41BC244F24 /* FConnectTests */,
+				ADEBABFA41C574E3F31BC6F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AB1420655BCC89990AF41AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78F7EB4F5B6CF7957238F24A /* Ene6K77Controller.swift */,
+				4A559735EBB41C71D304D615 /* Ene6K77Profile.swift */,
+				10492295EDCE5402DA6C59D4 /* ENELevels.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		556B194F10DD2A68C830C500 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C419AEAAC935D8E0B51BE8B2 /* ContentView.swift */,
+				043AE88D6F2D73CD0CEB30C2 /* CoolingControlView.swift */,
+				7D1F3B64532AF5E5B7480FDD /* DeviceSettingsView.swift */,
+				852517D9CBDD3527B87F4CF3 /* LightingControlView.swift */,
+				C85843E012901A67DA7564DD /* MainDashboardView.swift */,
+				0BC2C8826EDC4893E1F1C96C /* OverviewView.swift */,
+				54C936DA08BC26D2084448D1 /* UniFanGraphicView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ADEBABFA41C574E3F31BC6F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51F03C329FAAF9E581FE6BB2 /* FConnect.app */,
+				8A9B3DB7B6FD9040052109A6 /* FConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D183E850EFA3F3535BEBEAE0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B06F98797120F93CC49D9EE5 /* BaseDeviceController.swift */,
+				15F3FA98A83BC85C4B93117D /* DeviceCapabilities.swift */,
+				6C07E98AA74842C76807CF20 /* DeviceControllerFactory.swift */,
+				4EA674E5EA1B685D852EC355 /* DeviceManager.swift */,
+				24E3EDE4E2E8B7F73F6BC468 /* DiagnosticsCollector.swift */,
+				F998AD6950554FA36FEC1A36 /* DiagnosticsReport.swift */,
+				986ED5B93694AA60668CAEC2 /* EventLog.swift */,
+				6E8B8EA0A07981B20F6569D8 /* FanCurveEngine.swift */,
+				449F8E3D898F9B11DC365E74 /* HIDDevice.swift */,
+				612C4A5E700DB07EDA27A96D /* HIDError.swift */,
+				E0B80ED25608F7853057E717 /* KnownDevices.swift */,
+				5CFC8CECF54CE1FD36D13945 /* PhysicalDevice.swift */,
+				F5615A4BA8AB1CB5A6E260DF /* SMCSensors.swift */,
+				9105DFF78C771D135CA2278A /* StatusMenuFormatter.swift */,
+				4B6F891104019D1818CD50E5 /* SystemThermalMonitor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DBD23F254A68161E4678BF52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE19A3B57FFB90377B24F469 /* FanGroupState.swift */,
+				E73ED22C5F05EEA13D3B6626 /* LightingModels.swift */,
+				8B7916F13B071EA14A3E5B30 /* UIModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE29EC50560BCD4F16AE27BC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FF2598CCA13D24C384A6D213 /* MockHIDDevice.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		586A8772F00EBBEC8C7C0376 /* FConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306E062A83A3F505A78D7D82 /* Build configuration list for PBXNativeTarget "FConnect" */;
+			buildPhases = (
+				660D687B0B604DD1E1ED28B8 /* Sources */,
+				EC642058E9E6E522F296435B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FConnect;
+			packageProductDependencies = (
+			);
+			productName = FConnect;
+			productReference = 51F03C329FAAF9E581FE6BB2 /* FConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA1196F3308E8834176BC30 /* FConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061A0C85AA84A914B4994BB8 /* Build configuration list for PBXNativeTarget "FConnectTests" */;
+			buildPhases = (
+				E69F3C2BD41AF0A668FDD856 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FConnectTests;
+			packageProductDependencies = (
+			);
+			productName = FConnectTests;
+			productReference = 8A9B3DB7B6FD9040052109A6 /* FConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB6CACDBAD54526CAF22EC0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = AA3D2FD1B17DD3AF0B490B01 /* Build configuration list for PBXProject "FConnect" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 19AE89A5317C4CD2786CEA93;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ADEBABFA41C574E3F31BC6F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				586A8772F00EBBEC8C7C0376 /* FConnect */,
+				ADA1196F3308E8834176BC30 /* FConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC642058E9E6E522F296435B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2BF6F68638F328AD9C2474 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		660D687B0B604DD1E1ED28B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F62691425F4339A1681F31B /* BaseDeviceController.swift in Sources */,
+				2064007CFB5ADC949A941B77 /* ContentView.swift in Sources */,
+				3E12EE7809788D5CD09F480F /* CoolingControlView.swift in Sources */,
+				8A66B46AB2827DF5534B15F3 /* DeviceCapabilities.swift in Sources */,
+				8B32219334C6646C14105DA0 /* DeviceControllerFactory.swift in Sources */,
+				8F9826153AC9B0CD5D23F49D /* DeviceManager.swift in Sources */,
+				23E27663460117806D2B85B8 /* DeviceSettingsView.swift in Sources */,
+				2F69D02712EF831310AE235D /* DiagnosticsCollector.swift in Sources */,
+				7CDB0E0220461E8569B2D0B9 /* DiagnosticsReport.swift in Sources */,
+				B43924928FA9A2CE33C69142 /* ENELevels.swift in Sources */,
+				F5275ADFF839450CDAE0BDF0 /* Ene6K77Controller.swift in Sources */,
+				88F99DA199576F53F81ED38A /* Ene6K77Profile.swift in Sources */,
+				8AD356539628BBFF5805F88A /* EventLog.swift in Sources */,
+				06E7773B45D8195E5BE20AB7 /* FConnectApp.swift in Sources */,
+				4425110BEFE04C2DF079DF19 /* FanCurveEngine.swift in Sources */,
+				8C282D075EF1BB9D6314DAEC /* FanGroupState.swift in Sources */,
+				723B34E7C33F01A033C8C3BE /* HIDDevice.swift in Sources */,
+				5F8EDFB5742C17E043C635E3 /* HIDError.swift in Sources */,
+				C836C94ADDAB7E0FE497E3F1 /* KnownDevices.swift in Sources */,
+				8752B1C8E2D07FA7BAF6DD6D /* LightingControlView.swift in Sources */,
+				45A376B271B7ACE67B8ED27D /* LightingModels.swift in Sources */,
+				23C513F42DAF322F66C43DE6 /* MainDashboardView.swift in Sources */,
+				4B34A4AAA1855729BF2CB267 /* OverviewView.swift in Sources */,
+				8283959737FA08A7FDBCADAF /* PhysicalDevice.swift in Sources */,
+				F8123B88437CF0489074015F /* SMCSensors.swift in Sources */,
+				0FEAA8AB4E73221784A562DD /* StatusMenuFormatter.swift in Sources */,
+				8D4E9D31CFE3A75AE233F81E /* SystemThermalMonitor.swift in Sources */,
+				18067BFFDD0DDA45CB287F69 /* UIModels.swift in Sources */,
+				E5E810A8978D68FC5C33CBFF /* UniFanGraphicView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69F3C2BD41AF0A668FDD856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F167E3FDAFD175649286018 /* BaseDeviceController.swift in Sources */,
+				8BDAF766469881898BA46D8C /* ControllerTests.swift in Sources */,
+				8BA44FFE85601F234AA35E9F /* CoreSupportTests.swift in Sources */,
+				8F5C0F89A1C35CAA94E18ACF /* CurveTests.swift in Sources */,
+				257ECB759EE4E1BEF3727B1D /* DeviceCapabilities.swift in Sources */,
+				903CB3C7C21D7747E96EAE4A /* DeviceControllerFactory.swift in Sources */,
+				9BEB1E4B94C3BAF86D8E7B81 /* DeviceManager.swift in Sources */,
+				E27006F4937BD91014178DBA /* DiagnosticsCollector.swift in Sources */,
+				EDE1F66F50057FAC4B7CA919 /* DiagnosticsReport.swift in Sources */,
+				3FA6D955BA0EAE48F59EA2E2 /* DiagnosticsTests.swift in Sources */,
+				4204D7DFE8E9937069042D91 /* ENELevels.swift in Sources */,
+				B04293A4F506625901A0E831 /* Ene6K77Controller.swift in Sources */,
+				88E8158CDED78C90E358EBD5 /* Ene6K77Profile.swift in Sources */,
+				5E368F7BB143F8CF4CF0F47E /* EventLog.swift in Sources */,
+				1DC3344F38E691E7E8566515 /* FactoryTests.swift in Sources */,
+				0A630936888A76162E18C3A0 /* FanCurveEngine.swift in Sources */,
+				8CEEAD43C06E57D4C4EFD0D0 /* FanGroupState.swift in Sources */,
+				0406D2A465328BA467943D0B /* HIDDevice.swift in Sources */,
+				1FD27028D62CC4DB25BC2DDD /* HIDError.swift in Sources */,
+				CACFCEC8455B8A1D80ACA491 /* KnownDevices.swift in Sources */,
+				09D82CCEEB205DAF7FF33E31 /* LightingModels.swift in Sources */,
+				4E1D3E2386A18D5BCA0E24C3 /* LightingTests.swift in Sources */,
+				0F97556810EE7C2B9BACB335 /* MockHIDDevice.swift in Sources */,
+				A1DFA3A1C1092FA4D2B66903 /* PersistenceTests.swift in Sources */,
+				DD56D31813B4B838A8A66BC0 /* PhysicalDevice.swift in Sources */,
+				89F6CEF49720C78570C5947B /* ProfilePacketTests.swift in Sources */,
+				B83BB88FCC7688CBF882FF54 /* ProfileReplyTests.swift in Sources */,
+				2296D3582A56D63A8630977A /* SMCSensorTests.swift in Sources */,
+				BDD1842FF84F74B6BB5ED717 /* SMCSensors.swift in Sources */,
+				136E913A4C59B81432712B96 /* StatusMenuFormatter.swift in Sources */,
+				125E6679D1549C77C025C80A /* SystemThermalMonitor.swift in Sources */,
+				900C80FC0303B5EDA08D1510 /* UIModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F271FB8BDF5B3D3BB2E36F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FConnect/FConnect.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.pusk.fconnect;
+				PRODUCT_NAME = "F-Connect";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		44450F5DD297662C77DA5BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		7A6E0CE8CE0145569728E88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FConnect/FConnect.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.pusk.fconnect;
+				PRODUCT_NAME = "F-Connect";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D32BDAEFCE103510AE8800B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.pusk.fconnect.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF0214F5E327A2A42C79FB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		F2D718129FE49A217145CCA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = software.pusk.fconnect.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061A0C85AA84A914B4994BB8 /* Build configuration list for PBXNativeTarget "FConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32BDAEFCE103510AE8800B3 /* Debug */,
+				F2D718129FE49A217145CCA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		306E062A83A3F505A78D7D82 /* Build configuration list for PBXNativeTarget "FConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F271FB8BDF5B3D3BB2E36F3 /* Debug */,
+				7A6E0CE8CE0145569728E88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA3D2FD1B17DD3AF0B490B01 /* Build configuration list for PBXProject "FConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44450F5DD297662C77DA5BC5 /* Debug */,
+				DF0214F5E327A2A42C79FB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB6CACDBAD54526CAF22EC0E /* Project object */;
+}
